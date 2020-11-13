@@ -283,9 +283,7 @@
 
 
 <script>
-    // 每天切换 banner 图.  Switch banner image every day.
-    var bannerUrl = "/medias/banner/" + new Date().getDay() + '.jpg';
-    $('.bg-cover').css('background-image', 'url(' + bannerUrl + ')');
+    $('.bg-cover').css('background-image', 'url(/medias/banner/0.jpg)');
 </script>
 
 
@@ -459,8 +457,17 @@
 
 
 
-    <a href="tencent://AddContact/?fromId=50&fromSubId=1&subcmd=all&uin=269560906" class="tooltipped" target="_blank" data-tooltip="QQ联系我: 269560906" data-position="top" data-delay="50">
+
+
+    <a href="/medias/reward/alipay.jpg" class="tooltipped" target="_blank" data-tooltip="QQ联系我: /medias/reward/alipay.jpg" data-position="top" 
+	data-delay="50">
         <i class="fab fa-qq"></i>
+    </a>
+
+
+
+    <a href="/medias/reward/wechat.png" class="tooltipped" target="_blank" data-tooltip="微信联系我: /medias/reward/wechat.png" data-position="top" data-delay="50">
+        <i class="fab fa-weixin"></i>
     </a>
 
 
